@@ -4,4 +4,4 @@
 
 * yarn/npm dev - executar backend
 * yarn/npm start - executar app
- *  json-server server.json -p 399 - executar json-server
+ *  json-server server.json -p 3999 - executar json-server
