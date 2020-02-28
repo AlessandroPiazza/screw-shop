@@ -1,4 +1,6 @@
 # screw-shop
+login: admin
+senha: admin
 
 * yarn/npm - baixar dependencias.
 
