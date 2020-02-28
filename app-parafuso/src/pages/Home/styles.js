@@ -4,84 +4,79 @@ import { darken, lighten } from 'polished';
 
 export const ProductList = styled.div`
   width: 100%;
-
+  background: #F7F7F7;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   list-style: none;
-  color: ${props => props.theme.theme.color};
+  color: #232323;
+
+  .title{
+    padding: 20px 0 20px 0;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  a{
+
+  }
   ul{
-      width: 100%;
-      align-self: center;
+      width: 700px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 20px;
+      list-style: none;
     li {
-        margin: 0 auto;
-        float: left;
-        min-width: 350px;
+      height: 200px;
+      width: 150px;
+      background: #FFFFFF;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      button {
+        background: #232323;
+        border: none;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+        transition: 2s;
+        &:hover{
+          background: ${lighten(0.2, '#232323')};
+        }
+        h1{
+          color: #FDFDFD;
+          font-size: 76px;
+        }
+      }
+      img{
+        width: 75px;
+        height: 75px;
+
+      }
+      div{
         display: flex;
-        flex-direction: column;
-        background: ${props => lighten(0.01, props.theme.theme.background )};
-        border:1px solid #040F0F;
-        
-        padding: 20px;
-        max-width: 350px;      
-        img {
-            align-self: center;
-            max-width: 250px;
-            min-height: 250px;
-            max-height: 250px;
-            background: white;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 200px;
+        width: 150px;
+        border-radius: 25px;
+        background: rgba(255,198,40,.8);
+        transform: scaleY(0);
+        transition: transform .5s;
+        svg{
+          color: white;
         }
-        
-        > strong {
-            bottom: 0;
-            font-size: 16px;
-            line-height: 20px;
-        
-            margin-top: 5px;
-        }
-
-        > span {
-            font-size: 21px;
-            font-weight: bold;
-            margin: 5px 0 20px;
-        }
-
-        a {
-            background: ${props => props.theme.theme.primary};
-            color: #fff;
-            border: 0;
-            border-radius: 4px;
-            overflow: hidden;
-            margin-top: auto;
-            display: flex;
-            align-items: center;
-            transition: background 0.2s;
-            
-            &:hover {
-                background: ${props => darken(0.1, props.theme.theme.primary )}
-            }
-
-
-            div {
-                display: flex;
-                align-items: center;
-                padding: 12px;
-                background: rgba(0 ,0 ,0 ,0.1);
-
-                svg {
-                    margin-right: 5px;
-                }
-                
-            }
-            span{
-                
-                flex: 1;
-                font-weight: bold;
-                text-align: center;
-            }
-            
-        }
-
+      }
+      &:hover div{
+        transform: scaleY(1);
+      }
     }
   }
 `;

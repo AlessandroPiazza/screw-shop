@@ -9,10 +9,10 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    
+
   }
   body {
-    background: ${props => props.theme.theme.background};
+    background: #F7F7F7;
     -webkit-font-smoothing: antialiased;
   }
   *:focus{
@@ -22,12 +22,11 @@ export default createGlobalStyle`
     height: 100%;
     margin: 0;
   }
-  
+
   body, input, button {
     font: 14px 'Roboto', sans-serif;
   }
   #root {
-    max-width: 1400px;
     margin: 0 auto;
   }
 

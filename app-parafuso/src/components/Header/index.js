@@ -4,37 +4,27 @@ import { useDispatch } from 'react-redux';
 
 import { signOut } from '../../store/modules/auth/actions';
 
-import { MdAddCircleOutline, MdExitToApp, MdHome } from 'react-icons/md'
-import { Container, NewScrew, Home, Back } from './styles';
+import { MdAddCircleOutline, MdSearch, MdHome } from 'react-icons/md'
+import { Container, NewScrew, Home, Search } from './styles';
 
 
 export default function Header() {
-  const dispatch = useDispatch()
-  function handlesSignOut() {
-      dispatch(signOut());
-  }
-
-
   return (
     <Container >
-            <Home to="/home">
-            <MdHome size={105}/>
-            </Home>
-            
-            <div>
-            <NewScrew to="/newScrew">
-      
-                  <strong>Novo parafuso</strong>
-                  <MdAddCircleOutline size={36}/>
-              
-          </NewScrew>
-          <Back to="/" onClick={handlesSignOut}>
-          <MdExitToApp size={36}/>
-          </Back>
-          
-          
-          </div>
-      </Container> 
+      <div>
+        <Home to="/home">
+          <button>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </button>
+        </Home>
+        <p><strong>screw</strong>shop</p>
+        <Search>
+          <MdSearch size={36} />
+        </Search>
+      </div>
+    </Container>
   );
-  
+
 }

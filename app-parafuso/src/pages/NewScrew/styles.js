@@ -2,73 +2,89 @@ import styled from 'styled-components';
 import { darken, lighten } from 'polished'
 
 export const Container = styled.div`
- 
-  height: 100%;
-
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+.hexagono {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  Form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: ${props => props.theme.theme.primary};
- 
-  align-items: center;
-  padding: 50px;
+   width: 200px;
+   height: 110px;
+   background: #FFFF;
+   position: relative;
+   margin: 0 0 50px 0;
   border-radius: 5px;
-  /* border: solid 1px ;   */
 
-    div{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      padding: 5px;
-      label {
-        padding: 0 0 5px 0;
+   }
+
+.hexagono:before {
+   width: 0;
+   height: 0;
+   content: "";
+   position: absolute;
+   top: -50px;
+   left: 0;
+   border-left: 100px solid transparent;
+   border-right: 100px solid transparent;
+   border-bottom: 50px solid #FFFF;
+
+}
+
+.hexagono:after {
+   width: 0;
+   height: 0;
+   content: "";
+   position: absolute;
+   bottom: -50px;
+   left: 0;
+   border-left: 100px solid transparent;
+   border-right: 100px solid transparent;
+   border-top: 50px solid #FFFF;
+}
+img{
+  width: 125px;
+  height: 125px;
+}
+form{
+  margin: 5px;
+  font-style: bold;
+  button{
+    border: none;
+    color: white;
+    margin: 0 5px;
+    float: right;
+    text-align: center;
+    width: 150px;
+    padding: 7px 0px;
+    border-radius: 20px;
+  }
+  .save{
+      background: #99DD4E;
+    }
+    .add{
+      background: black;
+    }
+    .remove{
+      background: #E2000B;
+    }
+  div{
+    background: white;
+    margin: 5px 0 5px 0;
+    padding: 10px 10px 10px 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    label{
+      position:absolute;
       }
+    input{
+      padding-left: 150px;
+      border: none;
+      color: #DFDFE1;
+      width: 700px;
     }
 
-  h1 {
-    padding: 5px 0px 30px 0px;
   }
-  input {
-      background: ${props => lighten(0.10, props.theme.theme.head )};
-      border: 0;
-      border-radius: 4px;
-      height: 44px;
-      padding: 0 15px;
-      color: white;
-      margin: 0 0 10px;
-      &::placeholder{
-        color: white;
-      }
-    }
-    span{
-      color: #F64C75;
-      align-self: flex-start;
-      margin: 0 0 10px;
-      font-weight: bold
-    }
-  }
-  button {
-      text-align: center;
-      cursor: pointer;
-      margin: 5px 0 0;
-      width: 100%;
-      height: 44px;
-      padding: 10px;
-      background: #279AF1;
-      font-weight: bold;
-      color: #fff;
-      border: 0;
-      border-radius: 4px;
-      font-size: 16px;
-      transition: background 0.2s;
-      &:hover {
-        background: ${darken(0.03, '#279AF1')}
-      }
-    }
+}
 `;

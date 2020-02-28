@@ -6,9 +6,9 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   Form {
-  color: ${props => props.theme.theme.primary};
+  color: #232323;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,8 +18,8 @@ export const Container = styled.div`
     padding: 5px 0px 30px 0px;
   }
   input {
-      
-      background: ${props => lighten(0.10, props.theme.theme.head )};
+
+      background: #232323;
       border: 0;
       border-radius: 4px;
       height: 34px;

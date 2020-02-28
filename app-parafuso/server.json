@@ -1,64 +1,139 @@
 {
+  "dimension": [
+    {
+      "id": 1,
+      "sku": 864864,
+      "diameter": 2,
+      "length": 15,
+      "quantity": 1000,
+      "price": 1
+    },
+    {
+      "id": 1,
+      "sku": 864864,
+      "diameter": 3,
+      "length": 20,
+      "quantity": 500,
+      "price": 2
+    },
+    {
+      "id": 3,
+      "sku": 864864,
+      "diameter": 2,
+      "length": 15,
+      "quantity": 1000,
+      "price": 1
+    },
+    {
+      "id": 4,
+      "sku": 864864,
+      "diameter": 2,
+      "length": 15,
+      "quantity": 1000,
+      "price": 1
+    }
+  ],
   "products": [
     {
       "id": 1,
-      "title": "Floreira Parafuso Para Painel 4.5x80",
-      "price": 1,
+      "title": "Parafuso Sextavo MA",
+      "material": "Aço",
+      "threadType": "MA",
+      "screwThread": "inteira",
+      "class": "8.8",
+      "workmanship": "Polido",
       "image": "https://http2.mlstatic.com/floreira-parafuso-para-painel-45x80-D_NQ_NP_987947-MLB31863020818_082019-F.webp"
     },
     {
       "id": 2,
-      "title": "Parafuso Remanufaturado 4,0x90",
-      "price": 2.9,
+      "title": "Parafuso Sextavo MA",
+      "material": "Aço",
+      "threadType": "MA",
+      "screwThread": "inteira",
+      "class": "8.8",
+      "workmanship": "Polido",
       "image": "https://http2.mlstatic.com/parafuso-remanufaturado-40x90-D_NQ_NP_895972-MLB31864377311_082019-F.webp"
     },
     {
       "id": 3,
-      "title": "Parafuso Cg Titan",
-      "price": 1.2,
+      "title": "Parafuso Sextavo MA",
+      "material": "Aço",
+      "threadType": "MA",
+      "screwThread": "inteira",
+      "class": "8.8",
+      "workmanship": "Polido",
       "image": "https://http2.mlstatic.com/parafuso-cg-titan-D_NQ_NP_893016-MLB31906907264_082019-F.webp"
     },
     {
       "id": 5,
-      "title": "Parafuso Bucha",
-      "price": 1.5,
+      "title": "Parafuso Sextavo MA",
+      "material": "Aço",
+      "threadType": "MA",
+      "screwThread": "inteira",
+      "class": "8.8",
+      "workmanship": "Polido",
       "image": "https://http2.mlstatic.com/parafuso-bucha-D_NQ_NP_677664-MLB31827400226_082019-F.webp"
     },
     {
       "id": 6,
-      "title": "Parafuso Remanufaturado 4,0x50",
-      "price": 3,
+      "title": "Parafuso Sextavo MA",
+      "material": "Aço",
+      "threadType": "MA",
+      "screwThread": "inteira",
+      "class": "8.8",
+      "workmanship": "Polido",
       "image": "https://http2.mlstatic.com/parafuso-remanufaturado-40x50-D_NQ_NP_851892-MLB31864344989_082019-F.webp"
     },
     {
       "id": 4,
-      "title": "Parafuso Remanufaturado 4,8x50",
-      "price": 1.7,
+      "title": "Parafuso Sextavo MA",
+      "material": "Aço",
+      "threadType": "MA",
+      "screwThread": "inteira",
+      "class": "8.8",
+      "workmanship": "Polido",
       "image": "https://http2.mlstatic.com/parafuso-remanufaturado-48x50-D_NQ_NP_656785-MLB31864342459_082019-F.webp"
     },
     {
-      "title": "Kit parafuso",
-      "price": "2.5",
+      "title": "Parafuso Sextavo MA",
+      "material": "Aço",
+      "threadType": "MA",
+      "screwThread": "inteira",
+      "class": "8.8",
+      "workmanship": "Polido",
       "image": "https://s3-sa-east-1.amazonaws.com/robocore-lojavirtual/779/images/779_1_M.png?20191121154516",
       "id": 8
     },
     {
-      "title": "Kit parafuso",
-      "price": "1.5",
+      "title": "Parafuso Sextavo MA",
+      "material": "Aço",
+      "threadType": "MA",
+      "screwThread": "inteira",
+      "class": "8.8",
+      "workmanship": "Polido",
       "image": "https://images.tcdn.com.br/img/img_prod/422049/4070_1_20160421203708.jpg",
       "id": 10
     },
     {
-      "title": "Parafuso Rosca para Máquina 3/16 x 5/8 Bemfixa",
-      "price": 10.1,
+      "title": "Parafuso Sextavo MA",
+      "material": "Aço",
+      "threadType": "MA",
+      "screwThread": "inteira",
+      "class": "8.8",
+      "workmanship": "Polido",
       "image": "https://www.amoedo.com.br/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/1/3/1354454.jpg",
       "id": 12
     },
     {
-      "title": "Teste Parafuso",
-      "price": 1.5,
+      "title": "Parafuso Sextavo MA",
+      "material": "Aço",
+      "threadType": "MA",
+      "screwThread": "inteira",
+      "class": "8.8",
+      "workmanship": "Polido",
       "image": "https://ccp.vteximg.com.br/arquivos/ids/215641-1000-1000/parafuso-allen-cabeca-chata-inox-304-1-4-20-x-7-8-pacote-com-50-pecas.jpg?v=636129284359730000",
       "id": 13
     }
   ]
 }
+
